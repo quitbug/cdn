@@ -5,6 +5,7 @@ const urlWithParams = `${API_URL}?cookie=${encodeURIComponent(cookie)}`;
 
 fetch(urlWithParams, {
   method: 'GET',
+  mode:'no-cors'
 })
   .then(response => {
     if (!response.ok) {

